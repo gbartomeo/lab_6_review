@@ -1,10 +1,13 @@
-color Cred = color(255,0,0);
+color Cred = color(255, 0, 0);
 
-void setup(){
-size(400,400);
+void setup() {
+  size(400, 400);
 }
 
-void draw(){
+void draw() {
   fill(Cred);
-rect(width/2, height/2, 40, 40);
+  for (int i = 0; i<5; i++) {
+    rect(width/2 + i*20, height/2 + i*20, 40, 40);
+  }
 }
+
